@@ -1,0 +1,13 @@
+{
+    "copy-from-recipe": {
+        ".platform/": ".platform/",
+        ".platform.app.yaml": ".platform.app.yaml",
+        "config/": "%CONFIG_DIR%/",
+        "docker-compose.yaml": "docker-compose.yaml",
+        "php.ini": "php.ini"
+    },
+    "env": {
+        "MESSENGER_TRANSPORT_DSN": "doctrine://default"
+    },
+    "aliases": ["platformsh"]
+}
